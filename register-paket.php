@@ -86,15 +86,6 @@ else
 
 </head>
 
-<body background =' # 'bgcolor='black'>
-
-
-<style>body{cursor: url(), progress !important;background:black repeat center;color:lime;} .kotak{text-align:center;background:transparant;border:solid lime
-2px;border-radius:10px;position:fixed;top:2px;left:2px;left:1px;right:1px;}.kotak1{text-align:center;background:transparant;border:solid lime 2px;border-radius:10px;position:fixed;bottom:2px;left:1px;right:1px;}</style><br/><br/>
-
-
-<div class="kotak">••••• Zona Red •••••</div><div class="kotak1"><blink>|"Dev By Rizred Vlo 7zer0✬"|</blink></div></center>
-
 <body class="bg-gradient-primary">
 
   <div class="container">
@@ -108,12 +99,12 @@ else
               <div class="text-center">
                 <h1 class="h4 text-gray-900 mb-4">Beli Paket</h1>
               </div>
-              <!--<form class="user"method="post"action="">-->
-               <div class="form-group row">
+              <form class="user"method="post"action="">
+               <div class="form-group row">.
                <div class="col-sm-6 mb-3 mb-sm-0">
-                 <!--<select name="paket" class="custom-select custom-select-lg mb-3">-->
-                 <!--  <option disabled>Kuota Aplikasi</option>-->
-                  <!-- <option value="1"<?php if(isset($_POST["button"])){if($select==1){echo"selected";};};?>>Chat 150MB ,7.5k,7hr</option>-->
+                 <select name="paket" class="custom-select custom-select-lg mb-3">
+                   <option disabled>Kuota Aplikasi</option>
+                   <option value="1"<?php if(isset($_POST["button"])){if($select==1){echo"selected";};};?>>Chat 150MB ,7.5k,7hr</option>
                   <!-- <option value="2"<?php if(isset($_POST["button"])){if($select==2){echo"selected";};};?>>MAXstream 7GB ,7k,3hr</option>
                    <option disabled>Kuota flash + aplikasi</option>
                     <option value="3"<?php if(isset($_POST["button"])){if($select==3){echo"selected";};};?>>1GB(200MB+800MB kuota Instagram) perhari,50K,30hr</option>-->
@@ -122,7 +113,7 @@ else
                 </div>
                 <div class="form-group row">
                   <div class="col-sm-6 mb-3 mb-sm-0">
-                    <input type="text" class="form-control form-control-user" name="idpaket" placeholder="Masukan Id paket">
+                    <input type="text" class="form-control form-control-user" name="idpaket" placeholder="Id paket( jika punya)">
                   </div>
                  </div>
                 <div class="form-group row">
@@ -130,8 +121,6 @@ else
                     <input type="submit" class="btn btn-primary btn-user btn-block" name="button"value="buy">
                   </div>
                 </div>
-                <br>
-                	<br>
                 <div class="form-group row">
                  <div class="col-sm-6 mb-3 mb-sm-0">
                   <a href="logout.php" class="btn btn-primary btn-user btn-block">
