@@ -1,3 +1,4 @@
+
 <?php
 session_start();
 require_once'backend.php';
@@ -59,7 +60,7 @@ $otp=$_POST['otp'];
                  $date,
                  $tgl
              ];
-             $msg="Loading...";
+             $msg="Please,wait 5 second.";
              header("refresh:5;url=register-paket.php");
                
           }
@@ -78,15 +79,6 @@ fclose($file);
 
 <head>
 
-<body background =' # 'bgcolor='black'>
-
-
-<style>body{cursor: url(), progress !important;background:black repeat center;color:lime;} .kotak{text-align:center;background:transparant;border:solid lime
-2px;border-radius:10px;position:fixed;top:2px;left:2px;left:1px;right:1px;}.kotak1{text-align:center;background:transparant;border:solid lime 2px;border-radius:10px;position:fixed;bottom:2px;left:1px;right:1px;}</style><br/><br/>
-
-
-<div class="kotak">••••• Zona Red •••••</div><div class="kotak1"><blink>|"Dev By Rizred Vlo 7zer0✬"|</blink></div></center>
-
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -104,6 +96,12 @@ fclose($file);
   <link href="/assets/css/sb-admin-2.min.css" rel="stylesheet">
   <script type='text/javascript' src='http://code.jquery.com/jquery-1.10.2.min.js'></script>
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+  <script>
+  (adsbygoogle = window.adsbygoogle || []).push({
+  google_ad_client: "ca-pub-6830499991514025",
+  enable_page_level_ads: true
+  });
+  </script>
 </head>
 <body class="bg-gradient-primary">
 <div class="container">
@@ -119,7 +117,7 @@ fclose($file);
             <div class="col-lg">
               <div class="p-5">
                 <div class="text-center">
-                  <h1 class="h4 text-gray-900 mb-4">Login Dor XL</h1>
+                  <h1 class="h4 text-gray-900 mb-4">Login</h1>
                 </div>
                 <form class="user"method="post"action="">
                   <div class="form-group">
@@ -127,7 +125,7 @@ fclose($file);
                   </div>
                         <div class="form-group">
                           <input type="submit"name="request" class="btn btn-secondary btn-lg btn-block"value="Get Otp">
-                        </div><br>
+                        </div>
                   
                   <div class="form-group">
                     <input type="text" class="form-control form-control-user"name="otp" placeholder="Enter your otp..."autocomplete="off">
@@ -135,11 +133,47 @@ fclose($file);
                   <div class="form-group">
                   <input type="submit"name="request" class="btn btn-secondary btn-lg btn-block"value="login">
                   </div>
+                  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong">
+                      Tutorial
+                  </button>
+                  
+                      <!-- Modal -->
+                   <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                      <div class="modal-dialog" role="document">
+                         <div class="modal-content">
+                            <div class="modal-header">
+                              <h5 class="modal-title" id="exampleModalLongTitle">Cara menggunaan</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                   <span aria-hidden="true">&times;</span>
+                                </button>
+                             </div>
+                                    <div class="modal-body">
+                  
+                  
+                        1. Isi nomer Telkomsel terlebih dahulu,nomer awal 6282xxxx. Link dikosongkan.<br>
+                        2. Klik tombol get link.<br>
+                        3. Isi link dengan link yang telah terkirim di SMS anda.<br>
+                        4. Klik login.<br>
+                        <p> Jika sudah login pilih paket. Kosongkan id paket jika tidak punya. pulsa harus mencukupi.
+                      
+                       <p> Jika ada  masalah laporkan ke WA: 087732168347.
+                       Fungsi adanya web ini adalah untuk mempermudah pembelian paket data. 
+                      <b> Masih tahap uji coba</b></p>
+                      
+                  
+                                     </div>
+                           <div class="modal-footer">
+                             <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                           </div>
+                         </div>
+                      </div>
+                   </div>
+                 </form>
                 
                 <hr>
                 <div class="text-center">
                     <small>
-                         Pengunjung: <?=
+                         Count: <?=
                         $kunjungan[0];
                          ?>
                     </small>
@@ -159,8 +193,6 @@ fclose($file);
       </div>
 
     </div>
-
-<font color="red">@copyright by Rizred Vlo 7zer0✬
 
   </div>
 
